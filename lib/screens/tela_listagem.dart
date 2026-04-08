@@ -123,7 +123,7 @@ class _TelaListagemState extends State<TelaListagem> {
         actions: [
           // botao pra abrir a tela de generos
           IconButton(
-            icon: const Icon(Icons.label),
+            icon: const Icon(Icons.edit),
             tooltip: 'Gerenciar Generos',
             onPressed: _gerenciarGeneros,
           ),
