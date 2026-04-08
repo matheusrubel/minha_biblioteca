@@ -143,6 +143,7 @@ class _TelaGenerosState extends State<TelaGeneros> {
             )
           : ListView.builder(
               padding: const EdgeInsets.all(16),
+              physics: const BouncingScrollPhysics(),
               itemCount: _generos.length,
               itemBuilder: (context, index) {
                 return Card(

@@ -123,7 +123,7 @@ class _TelaListagemState extends State<TelaListagem> {
         actions: [
           // botao pra abrir a tela de generos
           IconButton(
-            icon: const Icon(Icons.edit),
+            icon: const Icon(Icons.edit, size: 30,),
             tooltip: 'Gerenciar Generos',
             onPressed: _gerenciarGeneros,
           ),
@@ -143,6 +143,7 @@ class _TelaListagemState extends State<TelaListagem> {
             )
           : ListView.builder(
               padding: const EdgeInsets.all(16),
+              physics: const BouncingScrollPhysics(),
               itemCount: _livros.length,
               itemBuilder: (context, index) {
                 final livro = _livros[index];
